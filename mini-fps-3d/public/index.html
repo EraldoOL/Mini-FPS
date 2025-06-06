@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini FPS 3D</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  
-</body>
+  <canvas id="gameCanvas"></canvas>
 
+  <!-- Controles mobile -->
+  <div id="controls">
+    <button id="btnLeft">←</button>
+    <button id="btnRight">→</button>
+    <button id="btnShoot">🔫</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
 </html>
